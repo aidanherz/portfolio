@@ -184,7 +184,9 @@ main > section + section { border-top: 1px solid var(--line); }
   width: min(100%, 360px);
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line));
+  background: var(--white);
+  padding: 10px;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -194,6 +196,9 @@ main > section + section { border-top: 1px solid var(--line); }
   object-fit: cover;
   object-position: 51% 30%;
   display: block;
+  border-radius: 2px;
+  outline: 1px solid var(--line);
+  outline-offset: -1px;
 }
 .eyebrow {
   font-family: var(--font-label);
@@ -426,8 +431,9 @@ main > section + section { border-top: 1px solid var(--line); }
 .about__photo-frame {
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background: var(--paper-2);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line));
+  background: var(--white);
+  padding: 10px;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -437,6 +443,9 @@ main > section + section { border-top: 1px solid var(--line); }
   object-fit: cover;
   object-position: 51% 30%;
   display: block;
+  border-radius: 2px;
+  outline: 1px solid var(--line);
+  outline-offset: -1px;
 }
 .about__copy p { margin: 0 0 1rem; font-size: 1.05rem; }
 .about__skills-title {
