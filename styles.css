@@ -418,8 +418,26 @@ main > section + section { border-top: 1px solid var(--line); }
   max-width: var(--maxw);
   margin: 2.6rem auto 0;
   padding: 0 var(--pad);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
 }
-.about__copy { max-width: 68ch; }
+.about__photo-frame {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.about__photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 51% 30%;
+  display: block;
+}
 .about__copy p { margin: 0 0 1rem; font-size: 1.05rem; }
 .about__skills-title {
   font-family: var(--font-label);
@@ -472,6 +490,8 @@ main > section + section { border-top: 1px solid var(--line); }
   .featured__interactive { position: static; }
   .hero__inner { grid-template-columns: 1fr; }
   .hero__photo { justify-self: start; width: min(62vw, 280px); }
+  .about__grid { grid-template-columns: 1fr; }
+  .about__photo-frame { max-width: 260px; }
   .post { grid-template-columns: 1fr auto; }
   .post__date { grid-column: 1; }
   .post__excerpt { grid-column: 1 / -1; }
