@@ -184,7 +184,7 @@ main > section + section { border-top: 1px solid var(--line); }
   width: min(100%, 360px);
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
-  border: 1px solid color-mix(in srgb, var(--accent) 60%, var(--line));
+  border: 3px solid color-mix(in srgb, var(--accent) 60%, var(--line));
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -426,7 +426,7 @@ main > section + section { border-top: 1px solid var(--line); }
 .about__photo-frame {
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
-  border: 1px solid color-mix(in srgb, var(--accent) 60%, var(--line));
+  border: 3px solid color-mix(in srgb, var(--accent) 60%, var(--line));
   box-shadow: var(--shadow);
   overflow: hidden;
 }
