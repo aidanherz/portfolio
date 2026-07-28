@@ -312,6 +312,7 @@ main > section + section { border-top: 1px solid var(--line); }
   flex-shrink: 0;
 }
 .demo__note { color: var(--ink-soft); font-size: 0.85rem; margin: 1.3rem 0 0; }
+.demo__cta { margin-top: 1rem; }
 
 /* ---------- selected work grid ---------- */
 .work__grid {
