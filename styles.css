@@ -314,26 +314,6 @@ main > section + section { border-top: 1px solid var(--line); }
 .demo__note { color: var(--ink-soft); font-size: 0.85rem; margin: 1.3rem 0 0; }
 .demo__cta { margin-top: 1rem; }
 
-/* Groundwork product screenshot */
-.featured__shot {
-  max-width: var(--maxw);
-  margin: clamp(34px, 5vw, 60px) auto 0;
-  padding: 0 var(--pad);
-}
-.featured__shot img {
-  width: 100%;
-  display: block;
-  border: 3px solid color-mix(in srgb, var(--accent) 60%, var(--line));
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-.featured__shot figcaption {
-  color: var(--ink-soft);
-  font-size: 0.9rem;
-  margin-top: 0.9rem;
-  text-align: center;
-}
-
 /* ---------- selected work grid ---------- */
 .work__grid {
   max-width: var(--maxw);
